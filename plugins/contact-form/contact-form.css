@@ -1,0 +1,61 @@
+iframe#contact-form { border: none; }
+
+#contact-form > form > fieldset > textarea {
+	width: 400px;
+	height: 150px;
+	border: 1px solid #444;
+	padding: 5px;
+}
+
+#contact-form > form > fieldset > select {
+	margin: 5px 0 20px 0;
+	width: 250px;
+}
+
+#contact-form > form > fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#contact-form em {
+	color: red;
+	font-size: 1.2em;
+}
+
+#contact-form-response {
+	margin: 20px 0;
+	font-weight: bold;
+	color: #EE2233;
+}
+
+#contact-form-submit {
+	padding: 7px;
+    border: 1px solid #444;
+    color: #444;
+    background-color: #EEE;
+}
+
+#contact-form > form > fieldset > input {
+	border: 1px solid #444;
+	padding: 5px;
+	width: 213px;
+}
+
+#contact-form {
+	margin: 0 20px 0 0 !important;
+	width: 220px;
+} 
+
+#contact-form-message {
+	width: 380px;
+	float: left;
+}
+
+#contact-form > form > fieldset > input.contact-form-recheck  {
+	border: 1px solid red;
+}
+
+#contact-form > form > fieldset > select.contact-form-recheck {
+	color: red;
+}

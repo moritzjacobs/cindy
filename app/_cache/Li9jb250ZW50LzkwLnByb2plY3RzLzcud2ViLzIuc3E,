@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Moritz Jacobs — SpqermQuest</title>
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<ul id="nav">
+			<li><a href="../../../projects/" class="inactive {permalink: 'projects'}">Projects</a></li>
+			<li><a href="../../../about/" class="inactive {permalink: 'about'}">About me</a></li>
+			<li><a href="../../../find-me/" class="inactive {permalink: 'find-me'}">Find me</a></li>
+			<li><a href="../../../links/" class="inactive {permalink: 'links'}">Links</a></li>
+	
+	</ul>
+	<div id="container">
+	
+
+<div id="layout-sq">
+	<h1>SpqermQuest</h1>
+	<br style="clear:both;" />
+	<div id="pro-cont"><p>Team play with <a href="http://www.claushoffmann.net">Claus Hoffmann</a>.
+Flashgame we made for our ActionScript 3 course at HS Augsburg.</p>
+
+<p><em>Supervised by Prof. Wolfgang Kowarschick</em></p>
+</div>
+
+		
+
+	<div id="pro-gal">
+		<ul>
+					<li><img class="pro-img" src="../../../content/90.projects/7.web/2.sq/code_sq_01.png" width="460" height="height"/></li>
+		
+		</ul>
+
+	</div>
+</div>	
+	</div>
+	
+	<div id="footer">
+		<p>© 2013 Moritz Jacobs — <a href="/impressum">Impressum</a><br/>
+		Powered by <a href="http://github.com/moritzjacobs/cindy">Stacey/Cindy</a></p>
+		
+		<div id="socialshareprivacy"></div>
+	</div>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+</html>
+
+<!-- Stacey(0.1): 6337fb7850755e0fdefb23716aa2e0aa -->

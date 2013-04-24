@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Moritz Jacobs — Selected Projects</title>
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<ul id="nav">
+			<li><a href="../projects/" class="inactive {permalink: 'projects'}">Selected Projects</a></li>
+			<li><a href="../about/" class="inactive {permalink: 'about'}">curriculum vitae</a></li>
+			<li><a href="../find-me/" class="inactive {permalink: 'find-me'}">How to find me</a></li>
+			<li><a href="../links/" class="inactive {permalink: 'links'}">Hyperlinks</a></li>
+	
+	</ul>
+	
+
+	
+<div id="layout-projects">
+
+	
+<div class="pj-cat">
+	<h1>Bigger projects</h1>
+	</div>
+
+    		<div class="pj-entry">
+			<a href="../projects/bigstuff/transit4/"><img src="../content/90.projects/8.bigstuff/9.transit4/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Transit 4</h1>
+    		<h2>2011, Oct</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/bigstuff/fifteencubes/"><img src="../content/90.projects/8.bigstuff/8.fifteencubes/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Fifteen Cubes</h1>
+    		<h2>2011, Jan</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/bigstuff/nexx/"><img src="../content/90.projects/8.bigstuff/7.nexx/thumb.jpg" width="345" height="140" alt="" />
+			<h1>ARTE NEXX!</h1>
+    		<h2>2010, Aug</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/bigstuff/oha/"><img src="../content/90.projects/8.bigstuff/1.oha/thumb.jpg" width="345" height="140" alt="" />
+			<h1>OHA!</h1>
+    		<h2>2009, Sep</h2></a>
+    	</div>
+    <div class="pj-cat">
+	<h1>Web</h1>
+	</div>
+
+    		<div class="pj-entry">
+			<a href="../projects/web/kfgs/"><img src="../content/90.projects/7.web/6.kfgs/thumb.jpg" width="345" height="140" alt="" />
+			<h1>KFGS e.V.</h1>
+    		<h2>2012, Apr</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/web/infiniwurst/"><img src="../content/90.projects/7.web/5.infiniwurst/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Infiniwurst</h1>
+    		<h2>2011, Oct</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/web/idesia/"><img src="../content/90.projects/7.web/4.idesia/thumb.jpg" width="345" height="140" alt="" />
+			<h1>IDESIA</h1>
+    		<h2>2010, Aug</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/web/sq/"><img src="../content/90.projects/7.web/2.sq/thumb.jpg" width="345" height="140" alt="" />
+			<h1>SpqermQuest</h1>
+    		<h2>2009, Jul</h2></a>
+    	</div>
+    <div class="pj-cat">
+	<h1>Graphics & Print</h1>
+	</div>
+
+    		<div class="pj-entry">
+			<a href="../projects/graphics/billy/"><img src="../content/90.projects/6.graphics/3.billy/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Barbara Bürckner</h1>
+    		<h2>2010, Jan</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/graphics/logos/"><img src="../content/90.projects/6.graphics/2.logos/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Logos</h1>
+    		<h2>2007–2009</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/graphics/flyer/"><img src="../content/90.projects/6.graphics/1.flyer/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Flyer</h1>
+    		<h2>2006–2010</h2></a>
+    	</div>
+    <div class="pj-cat">
+	<h1>Code</h1>
+	</div>
+
+    		<div class="pj-entry">
+			<a href="../projects/code/cindy/"><img src="../content/90.projects/5.code/9.cindy/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Cindy</h1>
+    		<h2>2012, Sep</h2></a>
+    	</div>
+    <div class="pj-cat">
+	<h1>Misc.</h1>
+	</div>
+
+    		<div class="pj-entry">
+			<a href="../projects/other/barbie/"><img src="../content/90.projects/4.other/4.barbie/thumb.jpg" width="345" height="140" alt="" />
+			<h1>B****</h1>
+    		<h2>2008, Jul</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/other/tommy/"><img src="../content/90.projects/4.other/2.tommy/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Tommy: Der Film!</h1>
+    		<h2>2010, Jun</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/other/konzert/"><img src="../content/90.projects/4.other/2.konzert/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Concert</h1>
+    		<h2>2009, Apr</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/other/logparty/"><img src="../content/90.projects/4.other/1.logparty/thumb.jpg" width="345" height="140" alt="" />
+			<h1>logParty</h1>
+    		<h2>2009, Jul</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/other/gozo/"><img src="../content/90.projects/4.other/1.gozo/thumb.jpg" width="345" height="140" alt="" />
+			<h1>Gozo</h1>
+    		<h2>2009, Feb</h2></a>
+    	</div>
+    		<div class="pj-entry">
+			<a href="../projects/other/acloserlook/"><img src="../content/90.projects/4.other/1.acloserlook/thumb.jpg" width="345" height="140" alt="" />
+			<h1>A Closer Look</h1>
+    		<h2>2009, Apr</h2></a>
+    	</div>
+    
+
+	</div>
+	
+	<div id="footer">
+		<p>© 2013 Moritz Jacobs — <a href="/impressum">Impressum</a><br/>
+		Powered by <a href="http://github.com/moritzjacobs/cindy">Stacey/Cindy</a></p>
+		
+		<div id="socialshareprivacy"></div>
+	</div>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+</html>
+
+<!-- Stacey(0.1): dac86abd49227b80b066a0a0e8a1d252 -->

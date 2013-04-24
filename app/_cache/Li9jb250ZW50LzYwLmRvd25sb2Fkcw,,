@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Moritz Jacobs — Downloads</title>
+	<link rel="stylesheet" href="/public/docs/css/reset.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/public/docs/css/style.css" type="text/css" charset="utf-8">
+	<link rel="icon" type="image/png" href="/public/images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/public/docs/js/jquery.metadata.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<ul id="nav">
+			<li><a href="../projects/" class="inactive {permalink: 'projects'}">Projects</a></li>
+			<li><a href="../about/" class="inactive {permalink: 'about'}">About me</a></li>
+			<li><a href="../contact-me/" class="inactive {permalink: 'contact-me'}">Contact</a></li>
+			<li><a href="../downloads/" class="inactive {permalink: 'downloads'}">Downloads</a></li>
+			<li><a href="../links/" class="inactive {permalink: 'links'}">Links</a></li>
+	
+	</ul>
+	<div id="container">
+	
+
+<div id="layout-downloads">
+<p>Some things I have made over the years, that might prove useful to somebody. Please consider the licenses provided with each of these downloads.</p>
+
+
+									<hr />
+						<h1>Stacey CMS Contact Form (AJAX) v0.2</h2>
+						<p><p>A small contact form for use in stacey managed websites.
+v0.2 includes form validation via jQuery.
+See also: <a href="http://staceyapp.com">http://staceyapp.com</a></p>
+
+<p><strong>NOTE:</strong> This will be reimplemented as a plugin for <a href="https://github.com/moritzjacobs/cindy">Cindy</a> soon.</p>
+<br />
+						<em>Downloads: </em>
+													<a href="../content/60.downloads/98.stacey-cf2/stacey-contact-form_v0_2.zip">stacey-contact-form_v0_2.zip</a><br />
+						
+						
+						</p>
+
+
+</div>	
+	</div>
+	
+	<div id="footer">
+		<p>© 2013 Moritz Jacobs — <a href="/impressum">Impressum</a><br/>
+		Powered by <a href="http://www.staceyapp.com">Stacey</a></p>
+		
+		<div id="socialshareprivacy"></div>
+	</div>
+	</div>
+	<script src="/public/docs/js/script.js"></script>
+</body>
+</html>
+
+<!-- Stacey(0.1): b5f75067602e7b692d0cf5e641a17b98 -->

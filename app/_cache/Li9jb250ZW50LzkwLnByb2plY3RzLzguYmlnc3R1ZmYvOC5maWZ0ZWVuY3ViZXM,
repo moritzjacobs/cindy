@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Moritz Jacobs — Fifteen Cubes</title>
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<ul id="nav">
+			<li><a href="../../../projects/" class="inactive {permalink: 'projects'}">Projects</a></li>
+			<li><a href="../../../about/" class="inactive {permalink: 'about'}">About me</a></li>
+			<li><a href="../../../contact-me/" class="inactive {permalink: 'contact-me'}">Contact</a></li>
+			<li><a href="../../../links/" class="inactive {permalink: 'links'}">Links</a></li>
+	
+	</ul>
+	<div id="container">
+	
+
+<div id="layout-fifteencubes">
+	<h1>Fifteen Cubes</h1>
+	<br style="clear:both;" />
+	<div id="pro-cont"><p>Developmental concept for a fictitious media art festival. Team play with <a href="http://claushoffmann.net/" target="_blank">Claus Hoffmann</a>, <a href="http://themurkscompany.de/" target="_blank">Dominik Liebherr</a>, <a href="http://mind2.de/" target="_blank">Jakob Nicklbauer</a>, <a href="http://www.cubic-motion.com/" target="_blank">Sebastian Ettinger</a>, <a href="http://thomarts.de/" target="_blank">Thomas M&uuml;ller</a>, <a href="http://neovisualism.com" target="_blank">Steffen Hörbrand</a> &amp; Stefanie Steinbach.</p>
+</div>
+
+					<object width="690" height="395">
+	<param name="allowfullscreen" value="true" />
+		<param name="allowscriptaccess" value="always" />
+		<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=20101073&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" />
+		<embed src="http://vimeo.com/moogaloop.swf?clip_id=20101073&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"  width="690" height="395"></embed></object>
+		
+
+	<div id="pro-gal">
+		<ul>
+					<li><img class="pro-img" src="../../../content/90.projects/8.bigstuff/8.fifteencubes/99.fc.jpg" width="490" height="height"/></li>
+					<li><img class="pro-img" src="../../../content/90.projects/8.bigstuff/8.fifteencubes/90.fc.jpg" width="490" height="height"/></li>
+					<li><img class="pro-img" src="../../../content/90.projects/8.bigstuff/8.fifteencubes/80.fc.jpg" width="490" height="height"/></li>
+		
+		</ul>
+
+	</div>
+</div>	
+	</div>
+	
+	<div id="footer">
+		<p>© 2013 Moritz Jacobs — <a href="/impressum">Impressum</a><br/>
+		Powered by <a href="http://www.staceyapp.com">Stacey</a></p>
+		
+		<div id="socialshareprivacy"></div>
+	</div>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+</html>
+
+<!-- Stacey(0.1): 91e89f1c7903888dc46154c00823e02c -->

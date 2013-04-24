@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Moritz Jacobs — Contact</title>
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" charset="utf-8">
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<ul id="nav">
+			<li><a href="../projects/" class="inactive {permalink: 'projects'}">Projects</a></li>
+			<li><a href="../about/" class="inactive {permalink: 'about'}">About me</a></li>
+			<li><a href="../contact-me/" class="inactive {permalink: 'contact-me'}">Contact</a></li>
+			<li><a href="../links/" class="inactive {permalink: 'links'}">Links</a></li>
+	
+	</ul>
+	<div id="container">
+	
+
+<div id="layout-contact-me">
+<p><em>Email:</em> <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;:&#x6d;&#97;&#x69;&#108;&#x40;&#109;&#111;&#x72;&#105;&#x74;&#122;j&#x61;&#99;&#x6f;&#98;&#x73;&#46;d&#x65;">&#x6d;&#97;&#x69;&#108;&#x40;&#109;&#111;&#x72;&#105;&#x74;&#122;j&#x61;&#99;&#x6f;&#98;&#x73;&#46;d&#x65;</a></p>
+
+<p><em>Skype:</em> moritz.jacobs</p>
+
+<p><em>Twitter:</em> <a href="https://twitter.com/moritzjacobs">@moritzjacobs</a></p>
+
+<p><em>Phone:</em> (+49) 0176 / 709 242 36</p>
+
+<p>No Facebook, no Foursquare, no Google+ – don't even bother.</p>
+
+</div>	
+	</div>
+	
+	<div id="footer">
+		<p>© 2013 Moritz Jacobs — <a href="/impressum">Impressum</a><br/>
+		Powered by <a href="http://github.com/moritzjacobs/cindy">Stacey/Cindy</a></p>
+		
+		<div id="socialshareprivacy"></div>
+	</div>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+</html>
+
+<!-- Stacey(0.1): 549cee6080efa3e50b263cc7ec51ee45 -->
