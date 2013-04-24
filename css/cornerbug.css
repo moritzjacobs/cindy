@@ -1,5 +1,9 @@
 #cornerbug {
 	display: block;
+	width: 100px;
+	height: 23px;
+	color: #fff;
+	background-color: red;
 	position: fixed;
 	top: 0;
 	right: 0;

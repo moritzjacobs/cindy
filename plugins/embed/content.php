@@ -18,7 +18,8 @@ class EmbedHelper {
 				$type = "youtube";
 				$id = $v;
 			} else if (strpos($k, "youtu") !== false && $v === "1") {
-				$url_id = array_pop(explode("/", $k));
+				$url_pcs = explode("/", $k);
+				$url_id = array_pop($url_pcs);
 				$type = "youtube";
 				$id = $url_id;
 			} else if (strpos($k, "vimeo") !== false && $v !== "1") {

@@ -138,7 +138,8 @@ class GlobalParser {
 	 */
 	static function make_inject_str($asset_path, $suffix) {
 		$inject_str = $suffix;
-		$asset_type = array_pop(explode(".", $asset_path));
+		$asset_path_pcs = explode(".", $asset_path);
+		$asset_type = array_pop($asset_path_pcs);
 		if ($asset_type == "css") {
 			$inject_str = '<link rel="stylesheet" href="'.$asset_path.'" type="text/css">'."\n".$inject_str;
 		} elseif ($asset_type == "js") {
