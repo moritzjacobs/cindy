@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-    <script src="/public/docs/js/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body onload='parent.resizeIframe(document.body.scrollHeight)'>
@@ -63,7 +63,7 @@
 			
 			if (checked) {
 				$("#contact-form-response").text("Please wait...");
-				$("#contact-form-response").load("<?=$base?>/plugins/contact-form/sendmail.php", {							
+				$("#contact-form-response").load("/plugins/contact-form/sendmail.php", {							
 					submit: true,
 					name: $("#contact-form-name").val(),
 					email: $("#contact-form-email").val(),
