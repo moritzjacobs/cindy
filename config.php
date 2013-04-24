@@ -9,6 +9,7 @@ class Config {
 	public static $file_size_decimal_places = 1;
 
 	public static $root_folder = './';
+	public static $docs_folder = './';
 	public static $app_folder = './app';
 	public static $content_folder = './content';
 	public static $templates_folder = './templates';

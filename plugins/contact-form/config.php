@@ -2,7 +2,7 @@
 class ContactForm extends Plugin {
 	public $settings = array(
 
-	"base" => "http://localhost/stacey_admin",
+	"base" => "",
 	
 	/* *********************************
      *  PLUGIN SETTINGS, NON-OPTIONAL! *

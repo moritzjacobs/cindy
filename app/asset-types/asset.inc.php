@@ -29,6 +29,7 @@ class Asset {
 		$this->data['@file_name'] = $this->file_name;
 		$this->data['@name'] = ucfirst(preg_replace(array('/[-_]/', '/\.[\w\d]+?$/', '/^\d+?\./'), array(' ', '', ''), $this->file_name));
 		$this->data['@file_size'] = Helpers::human_filesize(filesize($file_path));
+		$this->data['@docs'] = Config::$docs_folder;
 	}
 
 }
