@@ -136,8 +136,9 @@ class Stacey {
 			if($e->getMessage() == "404") {
 				# return 404 headers
 				header('HTTP/1.0 404 Not Found');
-				if(file_exists('./content/404')) {
-					$this->create_page('./content/404', '404');
+				if(file_exists($content_folder.'/404')) {
+					$this->route = '404';
+					$this->create_page(Config::$content_folder);
 				}
 				else if(file_exists('./public/404.html')) {
 						echo file_get_contents('./public/404.html');
