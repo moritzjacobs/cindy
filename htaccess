@@ -1,33 +1,90 @@
-RewriteEngine on
+<IfModule mod_rewrite.c>
+  RewriteEngine on
 
-# Some hosts require a rewritebase rule, if so, uncomment the RewriteBase line below. If you are running from a subdirectory, your rewritebase should match the name of the path to where stacey is stored.
-# ie. if in a folder named 'stacey', RewriteBase /stacey
-# RewriteBase /
+  # Some hosts require a rewritebase rule, if so, uncomment the RewriteBase line below. If you are running from a subdirectory, your rewritebase should match the name of the path to where stacey is stored.
+  # ie. if in a folder named 'cindy', RewriteBase /cindy
+  # RewriteBase /
 
-ErrorDocument 404 /404.html
+  ErrorDocument 404 /404.html
 
-# Rewrite any calls to *.html, *.json, *.xml, *.atom, *.rss, *.rdf or *.txt if a folder matching * exists
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !public/
-RewriteCond %{DOCUMENT_ROOT}/public/$1.$2 !-f
-RewriteRule (.+)\.(html|json|xml|atom|rss|rdf|txt)$ $1/ [L]
+  # Rewrite any calls to *.html, *.json, *.xml, *.atom, *.rss, *.rdf or *.txt if a folder matching * exists
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !public/
+  RewriteCond %{DOCUMENT_ROOT}/public/$1.$2 !-f
+  RewriteRule (.+)\.(html|json|xml|atom|rss|rdf|txt)$ $1/ [L]
 
-# Add a trailing slash to directories
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !(\.)
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ([^/]+)$ $1/ [L]
+  # Add a trailing slash to directories
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !(\.)
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ([^/]+)$ $1/ [L]
 
-# Rewrite any calls to /* or /app to the index.php file
-RewriteCond %{REQUEST_URI} /app/$
-RewriteRule ^app/ index.php [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ index.php?$1 [L]
+  # Rewrite any calls to /* or /app to the index.php file
+  RewriteCond %{REQUEST_URI} /app/$
+  RewriteRule ^app/ index.php [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)/$ index.php?$1 [L]
 
-# Rewrite any file calls to the public directory
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !public/
-RewriteRule ^(.+)$ public/$1 [L]
+  # Rewrite any file calls to the public directory
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !public/
+  RewriteRule ^(.+)$ public/$1 [L]
+
+</IfModule>
+
+# Prevent .txt file access except for robots.txt and humans.txt
+<Files ~ "\.txt$">
+  Order allow,deny
+  Deny from all
+</Files>
+<Files "robots.txt">
+  Order deny,allow
+  Allow from all
+</Files>
+<Files "humans.txt">
+  Order deny,allow
+  Allow from all
+</Files>
+
+# Disallow directory listing
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+# Turn on gzip compression
+<IfModule mod_deflate.c>
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+
+  <IfModule mod_filter.c>
+    AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                  "application/javascript" \
+                                  "application/json" \
+                                  "application/ld+json" \
+                                  "application/manifest+json" \
+                                  "application/rss+xml" \
+                                  "application/vnd.geo+json" \
+                                  "application/vnd.ms-fontobject" \
+                                  "application/x-font-ttf" \
+                                  "application/x-web-app-manifest+json" \
+                                  "application/xhtml+xml" \
+                                  "application/xml" \
+                                  "font/opentype" \
+                                  "image/svg+xml" \
+                                  "image/x-icon" \
+                                  "text/cache-manifest" \
+                                  "text/css" \
+                                  "text/html" \
+                                  "text/plain" \
+                                  "text/vtt" \
+                                  "text/x-component" \
+                                  "text/xml"
+  </IfModule>
+</Ifmodule>
