@@ -68,6 +68,9 @@ class Stacey {
 
 	function etag_expired($cache) {
 		header('Etag: "'.$cache->hash.'"');
+		# Safari incorrectly caches 304s as empty pages, so don't serve it 304s
+    if (strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') !== false) return true;
+    # Check for a local cache
 		if(isset($_SERVER['HTTP_IF_NONE_MATCH']) && stripslashes($_SERVER['HTTP_IF_NONE_MATCH']) == '"'.$cache->hash.'"') {
 			# local cache is still fresh, so return 304
 			header("HTTP/1.0 304 Not Modified");
@@ -136,8 +139,9 @@ class Stacey {
 			if($e->getMessage() == "404") {
 				# return 404 headers
 				header('HTTP/1.0 404 Not Found');
-				if(file_exists('./content/404')) {
-					$this->create_page('./content/404', '404');
+				if(file_exists($content_folder.'/404')) {
+					$this->route = '404';
+					$this->create_page(Config::$content_folder);
 				}
 				else if(file_exists('./public/404.html')) {
 						echo file_get_contents('./public/404.html');
