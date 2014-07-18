@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /app/
+Disallow: /content/
+Disallow: /plugins/
+Disallow: /templates/
+# Prevent images from being indexed
+# Uncomment the lines below as needed
+# Disallow: /*.gif$
+# Disallow: /*.jpg$
+# Disallow: /*.jpeg$
+# Disallow: /*.png$
