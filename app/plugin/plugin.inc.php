@@ -27,7 +27,7 @@ abstract class Plugin {
 				$this->assets .= 'inject "@root_path/plugins/'.$config["folder_name"].'/'.$asset."\"\n";
 			}
 		}
-		$this->template_file = "/plugins/".$config["folder_name"]."/".$config["template_file"];
+		$this->template_file = "@root_path/plugins/".$config["folder_name"]."/".$config["template_file"];
 		$this->type = $config["type"];
 		$this->width = $config["width"];
 		$this->height = $config["height"];
