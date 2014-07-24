@@ -1,6 +1,6 @@
 # Cindy 0.1b
 
-based on [Stacey 2.3.0](http://staeyapp.com) by Anthony Kolber
+based on [Stacey 2.3.0](http://staceyapp.com) by Anthony Kolber
 
 # About Cindy
 
@@ -32,7 +32,9 @@ If you want clean urls, `mv htaccess .htaccess`
 
 ## Copyright/License
 
-Cindy: Copyright © 2012 Moritz Jacobs. See `LICENSE` for details.
+Cindy: Copyright © 2014 Moritz Jacobs. See `LICENSE` for details.
+
 Stacey: Copyright © 2009 Anthony Kolber. See `LICENSE` for details.
+
 Except PHP Markdown Extra which is (c) Michel Fortin (see `/app/parsers/markdown-parser.inc.php` for details) and
 JSON.minify which is (c) Kyle Simpson (see 'app/parsers/json-minifier.inc.php' for details).
