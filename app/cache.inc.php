@@ -17,7 +17,7 @@ class Cache {
 
 	function __construct($file_path, $template_file) {
 		# turn a base64 of the current route into the name of the cache file
-		$this->cachefile = './app/_cache/'.$this->base64_url($file_path);
+		$this->cachefile = Config::$cache_folder.'/'.$this->base64_url($file_path);
 		# collect an md5 of all files
 		$this->hash = $this->create_hash();
 		# determine our file type so we know how (and if) to comment
@@ -35,7 +35,7 @@ class Cache {
 
 	function create($route) {
 		$page = new Page($route);
-		
+
 		# start output buffer
 		ob_start();
 		echo $page->parse_template();

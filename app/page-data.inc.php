@@ -28,7 +28,7 @@ class PageData {
 		array_pop($split_path);
 		$parent_path = array(implode('/', $split_path));
 
-		return $parent_path[0] == './content' ? array() : $parent_path;
+		return $parent_path[0] == Config::$content_folder ? array() : $parent_path;
 	}
 
 	static function get_parents($file_path, $url) {
@@ -156,14 +156,14 @@ class PageData {
 
 	static function create_collections($page) {
 		# $root
-		$page->root = Helpers::list_files('./content', '/^\d+?\./', true);
+		$page->root = Helpers::list_files(Config::$content_folder, '/^\d+?\./', true);
 		# $parent
 		$parent_path = self::get_parent($page->file_path, $page->url_path);
 		$page->parent = $parent_path;
 		# $parents
 		$page->parents = self::get_parents($page->file_path, $page->url_path);
 		# $siblings
-		$parent_path = !empty($parent_path[0]) ? $parent_path[0] : './content';
+		$parent_path = !empty($parent_path[0]) ? $parent_path[0] : Config::$content_folder;
 		$split_url = explode("/", $page->url_path);
 		$page->siblings = Helpers::list_files($parent_path, '/^\d+?\.(?!'.$split_url[(count($split_url) - 1)].')/', true);
 		# $siblings_and_self
@@ -199,7 +199,7 @@ class PageData {
 		$text = (file_exists($content_file_path)) ? file_get_contents($content_file_path) : '';
 
 		# include shared variables for each page
-		$shared = (file_exists('./content/_shared.txt')) ? file_get_contents('./content/_shared.txt') : '';
+		$shared = (file_exists(Config::$content_folder.'/_shared.txt')) ? file_get_contents(Config::$content_folder.'/_shared.txt') : '';
 		# strip any $n matches from the text, as this will mess with any preg_replaces
 		# they get put back in after the template has finished being parsed
 		$text = preg_replace('/\$(\d+)/', "\x02$1", $text);

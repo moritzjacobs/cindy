@@ -4,7 +4,8 @@ class TemplateParser {
 
 	static $partials;
 
-	static function collate_partials($dir = './templates/partials') {
+	static function collate_partials($dir = false) {
+		if (!$dir) $dir = Config::$templates_folder.'/partials';
 		foreach(Helpers::file_cache($dir) as $file) {
 			if($file['is_folder']) {
 				self::collate_partials($file['path']);
