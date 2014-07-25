@@ -31,7 +31,7 @@ class Helpers {
 		# if the url is empty, we're looking for the index page
 		$url = empty($url) ? 'index': $url;
 
-		$file_path = './content';
+		$file_path = Config::$content_folder;
 		# Split the url and recursively unclean the parts into folder names
 		$url_parts = explode('/', $url);
 		foreach($url_parts as $u) {
@@ -53,10 +53,10 @@ class Helpers {
 	static function file_cache($dir = false) {
 		if(!self::$file_cache) {
 			# build file cache
-			self::build_file_cache('./content');
-			self::build_file_cache('./plugins');
-			self::build_file_cache('./app');
-			self::build_file_cache('./templates');
+			self::build_file_cache(Config::$content_folder);
+			self::build_file_cache(Config::$plugins_folder);
+			self::build_file_cache(Config::$app_folder);
+			self::build_file_cache(Config::$templates_folder);
 		}
 		if($dir && !self::$file_cache[$dir]) return array();
 		return $dir ? self::$file_cache[$dir] : self::$file_cache;
@@ -135,7 +135,8 @@ class Helpers {
 		return $last_modified;
 	}
 
-	static function site_last_modified($dir = './content') {
+	static function site_last_modified($dir = false) {
+		if (!$dir) $dir = Config::$content_folder;
 		$last_updated = 0;
 		foreach(Helpers::list_files($dir, '/.*/', false) as $file) {
 			if(filemtime($file) > $last_updated) $last_updated = filemtime($file);
@@ -159,7 +160,7 @@ class Helpers {
 	static function human_filesize($size, $max = null, $decimal_sep = ".") {
 		$decimal_sep = Config::$decimal_seperator;
 		$decimal_places = Config::$file_size_decimal_places;
-		
+
 		$retstring = '%01.'.$decimal_places.'f %s';
 		$sys['prefix'] = array('B', 'kB', 'MB', 'GB', 'TB', 'PB');
 		$sys['size']   = 1024;
@@ -181,7 +182,7 @@ class Helpers {
 		if ($decimal_sep != ".") { $ret = str_replace(".", $decimal_sep, $ret); }
 		return $ret;
 	}
-	
+
 	static function serialize_get_string($data) {
 		$get = "?";
 		foreach($data as $k=>$v) {
