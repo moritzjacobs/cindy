@@ -224,7 +224,7 @@ class PageData {
 
 			# replace the only var in your content - @path for your inline html with images and stuff
 			$relative_path = preg_replace('/^\.\//', Helpers::relative_root_path(), $page->file_path);
-			$colon_split[1] = preg_replace('/\@path/', $relative_path.'/', $colon_split[1]);
+			$colon_split[1] = preg_replace('/\@path/', $relative_path, $colon_split[1]);
 
 			# get template file type as $split_path[1]
 			global $current_page_template_file;
