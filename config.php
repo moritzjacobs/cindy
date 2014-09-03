@@ -16,7 +16,8 @@ class Config {
 	public static $cache_folder = './app/_cache';
 	public static $extensions_folder = './extensions';
 	public static $plugins_folder = './plugins';
-	
+	public static $error404_page = './content/404';
+
 }
 
 ?>
