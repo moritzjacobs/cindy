@@ -32,7 +32,19 @@ class Image extends Asset {
 		preg_match_all('/\d+/', $img_data[3], $dimensions);
 		$this->data['@width'] = $dimensions[0][0];
 		$this->data['@height'] = $dimensions[0][1];
-
+		
+		
+		# set @orientation
+		$aspect_ratio = $dimensions[0][0] / $dimensions[0][1];
+		if($aspect_ratio == 1) {
+			$orientation = 'square';
+		} elseif ($aspect_ratio < 1) {
+			$orientation = 'portrait';
+		} elseif ($aspect_ratio > 1) {
+			$orientation = 'landscape';
+		}
+		$this->data['@orientation'] = $orientation;
+		
 		# set iptc variables
 		if(isset($info["APP13"])) {
 			$iptc = iptcparse($info["APP13"]);
