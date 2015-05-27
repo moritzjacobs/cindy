@@ -4,13 +4,13 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>@title, @name's Portfolio </title>
-    <link rel="alternate" type="application/atom+xml" href="@root_path/?/feed/">
-    <link rel="stylesheet" href="@root_path/css/screen.css" type="text/css" media="screen">
+    <link rel="alternate" type="application/atom+xml" href="http://@base_url/?/feed/">
+    <link rel="stylesheet" href="http://@base_url/css/screen.css" type="text/css" media="screen">
   </head>
   <body>
     <div id="container">
       <h1 class="col three">
-        <a href="@root_path">@name</a>
+        <a href="http://@base_url">@name</a>
         <strong>@profession</strong>
       </h1>
       <em class="col three">@email</em>
@@ -19,7 +19,7 @@
       <div id="content" class="col eight">
         <p class="date col one">&para;</p>
         <div class="description col six">
-          <h2 class="col six"><a href="@root_path">@title</a></h2>
+          <h2 class="col six"><a href="http://@base_url">@title</a></h2>
           :images
           @content
           :pdfs
