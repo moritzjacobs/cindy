@@ -584,6 +584,15 @@ The width of the current image.
 The height of the current image.
 (ie. 768)
 
+####@orientation####
+The current image's orientation.
+(either 'portrait', 'landscape' or 'square')
+
+
+####@height####
+The height of the current image.
+(ie. 768)
+
 
 ###Video###
 Cindy will put any video files with the following extensions
