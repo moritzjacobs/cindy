@@ -3,7 +3,7 @@
 	/* -----------
 	   PREFERENCES
 	   ----------- */
-	$your_email = "mail@moritzjacobs.de";
+	$your_email = "mail@example.com";
 	
 	$ok_message = "Thanks for your message!";
 
